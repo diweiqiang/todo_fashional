@@ -25,9 +25,10 @@
         var script1=document.createElement('script');
         var script2=document.createElement('script');
         script1.onload=function () {
-            script2.src='todo_pc.js';
+            script2.src='todo_phone.js';
         };
         script1.src='zepto-master/src/zepto.js';
+        //script1.src='hammer.js-master/hammer.js';
         document.body.appendChild(script1);
         document.body.appendChild(script2);
     }
