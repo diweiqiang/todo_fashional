@@ -7,9 +7,19 @@
     src:url('Josefin_Slab/JosefinSlab-SemiBold.ttf');
 }
 
-html,body{
-    height:100%;
+/*html,body{
+    margin:0;
+    padding:0;
+    height: 90vh;
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to left, #c0c0aa , #1ce);
+}*/
+
+body{
+    max-height:75vh;
+    min-height:75vh;
+    border:1px solid transparent;
+    box-sizing: border-box;
     background: linear-gradient(to left, #c0c0aa , #1ce);
 }
 #container{

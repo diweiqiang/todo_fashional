@@ -63,6 +63,15 @@
                 localStorage.setItem('todo'+length,newItem);
             });
 
+
+            /*$('li').swiperight(function () {
+                $(this).find('span').css({width:'2.5em',opacity:'1'});
+            }).swipeleft(function () {
+                $(this).find('span').css({width:'0',opacity:'0'});
+            });
+
+            $('li span').tap(remove);*/
+
             $('li').on('touchstart',function (e) {
                 //e.preventDefault();
                 startX=e.originalEvent.changedTouches[0].pageX;
@@ -70,6 +79,7 @@
             });
 
             $('li').on('touchmove',function (e) {
+                //e.preventDefault();
                 moveEndX=e.originalEvent.changedTouches[0].pageX;
                 moveEndY=e.originalEvent.changedTouches[0].pageY;
                 X=moveEndX-startX;
