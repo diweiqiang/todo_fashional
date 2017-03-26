@@ -24,8 +24,10 @@
     {
         var script1=document.createElement('script');
         var script2=document.createElement('script');
+        script1.onload=function () {
+            script2.src='todo_pc.js';
+        };
         script1.src='zepto-master/src/zepto.js';
-        script2.src='todo_phone.js';
         document.body.appendChild(script1);
         document.body.appendChild(script2);
     }
@@ -33,8 +35,10 @@
     {
         var script3=document.createElement('script');
         var script4=document.createElement('script');
+        script3.onload=function () {
+            script4.src='todo_pc.js';
+        };
         script3.src='jquery-3.1.0.js';
-        script4.src='todo_pc.js';
         document.body.appendChild(script3);
         document.body.appendChild(script4);
     }
